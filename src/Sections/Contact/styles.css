@@ -1,0 +1,61 @@
+div.contact {
+  margin-bottom: 30px;
+  position: relative;
+}
+.label::before {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: #595de5;
+  transition: all 0.3s;
+  top: -20px;
+}
+/* .label::after {
+  content: "";
+  width: 10%;
+  background-color: #595de5;
+  position: absolute;
+  bottom: 3px;
+  left: 45%;
+  z-index: -1;
+  transition: all 1s ease-in-out;
+} */
+
+.input {
+  padding: 1rem;
+  width: 100%;
+  position: relative;
+  outline: none;
+  background-color: #595de533;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+/* .input:focus + .label::after {
+  width: calc(100% - 0.5rem - 20px);
+  left: calc(0.25rem + 10px);
+  height: 2px;
+} */
+
+.input:invalid {
+  background-color: #e67470;
+}
+
+.labelname::before {
+  width: 100%;
+  content: "Name";
+}
+.labelmail::before {
+  width: 100%;
+  content: "Your e-Mail";
+}
+.labelsubject::before {
+  width: 100%;
+  content: "Subject";
+}

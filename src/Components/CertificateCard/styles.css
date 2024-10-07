@@ -1,0 +1,48 @@
+.blury {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  width: 300px;
+  height: 500px;
+}
+
+.blury-img {
+  width: 360px;
+}
+
+.parallax {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-style: italic;
+  color: white;
+  transform: translateZ(60px);
+}
+
+.cer-card {
+  transition: all 0.5s;
+}
+
+.cer-card:hover {
+  transform: translateY(-120px);
+}
+
+.cer-card:hover ~ .cer-card {
+  transform: translateX(160px);
+}
+
+.cer-card:not(:first-child) {
+  margin-left: -180px;
+}
+.cer-card:first-child {
+  margin-left: -130px;
+}

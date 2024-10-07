@@ -1,0 +1,40 @@
+h3 {
+  font-size: 2rem;
+  letter-spacing: 0.25rem;
+  text-align: center;
+  color: transparent;
+  position: relative;
+  color: black;
+}
+h3:before {
+  content: attr(data-text);
+  letter-spacing: 0.25rem;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: white;
+  transition: all 1s linear;
+}
+
+.logo-div:hover > h3::before {
+  width: 100%;
+  color: white;
+}
+.logo-div:hover > .logo {
+  color: white;
+}
+
+.logo {
+  transition: all 0.5s;
+}
+.footer {
+  background: rgb(40, 42, 102);
+  background: linear-gradient(
+    90deg,
+    rgba(40, 42, 102, 1) 0%,
+    rgba(65, 68, 166, 1) 100%
+  );
+}
