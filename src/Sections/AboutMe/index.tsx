@@ -35,8 +35,6 @@ function AboutMe() {
           </h4>
           <ol className="flex gap-4 lg:gap-x-8 lg:gap-y-2 justify-start items-center flex-wrap">
             <li className="text-shadows-100 bullet">React</li>
-            <li className="text-shadows-100 bullet">Angular</li>
-            <li className="text-shadows-100 bullet">Django</li>
             <li className="text-shadows-100 bullet">Python</li>
             <li className="text-shadows-100 bullet">JavaScript</li>
             <li className="text-shadows-100 bullet">Spring</li>
