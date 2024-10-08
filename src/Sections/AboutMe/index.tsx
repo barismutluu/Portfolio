@@ -39,6 +39,8 @@ function AboutMe() {
             <li className="text-shadows-100 bullet">JavaScript</li>
             <li className="text-shadows-100 bullet">Spring</li>
             <li className="text-shadows-100 bullet">Java</li>
+            <li className="text-shadows-100 bullet">C#</li>
+            <li className="text-shadows-100 bullet">SQL</li>
             <li className="text-shadows-100 bullet">Mongo DB</li>
             <li className="text-shadows-100 bullet">Git</li>
             <li className="text-shadows-100 bullet">Tailwind Css</li>
