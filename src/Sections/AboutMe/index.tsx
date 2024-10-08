@@ -23,6 +23,7 @@ function AboutMe() {
             utilizing frameworks such as Spring Boot. I have also completed projects including a{" "}
             <span className="font-bold"> Veterinary Management System </span>,
             <span className="font-bold"> MineSweeper Game </span>,
+            <span className="font-bold"> Sport Center </span>,
             <span className="font-bold">Tourism Agency Application</span> and{" "}
             <span className="font-bold">LibraryApp</span>, which you can explore in the{" "}
             <a href="#projects" className="underline font-bold">
