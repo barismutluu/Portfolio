@@ -23,6 +23,7 @@ function AboutMe() {
             utilizing frameworks such as Spring Boot. I have also completed projects including a{" "}
             <span className="font-bold"> Veterinary Management System </span>,
             <span className="font-bold"> MineSweeper Game </span>,
+            <span className="font-bold"> Sport Center </span>,
             <span className="font-bold">Tourism Agency Application</span> and{" "}
             <span className="font-bold">LibraryApp</span>, which you can explore in the{" "}
             <a href="#projects" className="underline font-bold">
@@ -35,12 +36,12 @@ function AboutMe() {
           </h4>
           <ol className="flex gap-4 lg:gap-x-8 lg:gap-y-2 justify-start items-center flex-wrap">
             <li className="text-shadows-100 bullet">React</li>
-            <li className="text-shadows-100 bullet">Angular</li>
-            <li className="text-shadows-100 bullet">Django</li>
             <li className="text-shadows-100 bullet">Python</li>
             <li className="text-shadows-100 bullet">JavaScript</li>
             <li className="text-shadows-100 bullet">Spring</li>
             <li className="text-shadows-100 bullet">Java</li>
+            <li className="text-shadows-100 bullet">C#</li>
+            <li className="text-shadows-100 bullet">SQL</li>
             <li className="text-shadows-100 bullet">Mongo DB</li>
             <li className="text-shadows-100 bullet">Git</li>
             <li className="text-shadows-100 bullet">Tailwind Css</li>
