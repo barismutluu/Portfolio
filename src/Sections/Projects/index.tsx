@@ -4,6 +4,7 @@ import "./styles.css";
 import ProjectCard from "../../Components/ProjectCard";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import mineSweeperGame from "../../Assets/projects/mineSweeper.png";
+import sportCenter from "../../Assets/projects/sportcenter.png";
 import veterinary from "../../Assets/projects/veterinary.png";
 import tourism from "../../Assets/projects/tourism.png";
 import libraryApp from "../../Assets/projects/libraryApp.png";
@@ -19,11 +20,19 @@ const projects = [
   },
   {
     image: mineSweeperGame,
-    title: "mineSweeperGame",
+    title: "Mine Sweeper Game",
     description: `The text-based MineSweeper game is implemented using a 2D array, where users specify matrix dimensions and mines are randomly placed. The game ends when the user selects a mine, while successfully opening all safe cells leads to a win..`,
     link: "",
     gitLink: "https://github.com/barismutluu/MineSweeperGame",
     tech: ["Java"],
+  },
+  {
+    image: sportCenter,
+    title: "Sport Center",
+    description: `The responsive web page for the sports center that includes a variety of classes, top trainers, a BMI calculator and an active Google Map.`,
+    link: "https://sport-center-ten.vercel.app/",
+    gitLink: "https://github.com/barismutluu/SportCenter",
+    tech: ["HTML","CSS","JavaScript"],
   },
   {
     image: tourism,

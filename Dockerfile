@@ -3,7 +3,7 @@ FROM node:22-slim
 # Install git
 RUN apt-get update && apt-get install -y git
 # Clone the repository
-RUN git clone https://github.com/gorbadil/PortfolioTS
+RUN git clone https://github.com/barismutluu/Portfolio
 
 # Install the dependencies
 WORKDIR /PortfolioTS
