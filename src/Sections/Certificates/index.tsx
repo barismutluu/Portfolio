@@ -1,5 +1,7 @@
 import "./styles.css";
 
+import FullStack_Backend from "../../Assets/certificates/fullstack_backend.png";
+import FullStack from "../../Assets/certificates/fullstack.png";
 import BackEnd from "../../Assets/certificates/back-End.png";
 import CertificateCard from "../../Components/CertificateCard";
 import { Fade } from "react-awesome-reveal";
@@ -18,6 +20,18 @@ type certificate = {
 };
 
 const certificates: certificate[] = [
+  {
+    certificate: FullStack_Backend,
+    from: "Techcareer.net",
+    name: "Full Stack Back-End Development with Docker Bootcamp",
+    link: "https://certificates.techcareer.net/tr/verify/91973906354070",
+  },
+  {
+    certificate: FullStack,
+    from: "Patika.Dev",
+    name: "FullStack Web Development Bootcamp",
+    link: "http://cohorts.patika.dev/certificates/svbSlqxc",
+  },
   {
     certificate: BackEnd,
     from: "Patika.Dev",
