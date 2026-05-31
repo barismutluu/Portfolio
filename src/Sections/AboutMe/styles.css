@@ -1,0 +1,41 @@
+.bullet::before {
+  content: "•";
+  margin-right: 5px;
+}
+
+.bullet {
+  position: relative;
+}
+
+.profile {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  background-color: whitesmoke;
+  animation: borderAnim 5s infinite alternate;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #ffffff;
+  box-shadow: -8px 18px 0px 10px #4144a6, 40px -20px 10px 10px #e2e2f4,
+    -42px 42px 0px 10px rgba(0, 0, 0, 0.1), -52px 52px 20px rgba(0, 0, 0, 0.9);
+}
+
+#about-me {
+  background-color: #fdfdfd;
+}
+
+@keyframes borderAnim {
+  0% {
+    border-radius: 17% 3% 39% 61% / 68% 33% 67% 32%;
+  }
+  25% {
+    border-radius: 57% 22% 18% 72% / 75% 72% 28% 25%;
+  }
+  50% {
+    border-radius: 18% 42% 18% 82% / 75% 72% 28% 25%;
+  }
+  75% {
+    border-radius: 57% 22% 18% 72% / 75% 72% 28% 25%;
+  }
+  100% {
+    border-radius: 26% 74% 23% 17% / 17% 13% 87% 83%;
+  }
+}

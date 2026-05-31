@@ -1,0 +1,8 @@
+.vertical-date {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  position: relative;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
