@@ -12,6 +12,7 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
+<<<<<<< HEAD
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
@@ -19,3 +20,13 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
+=======
+    versionSpec: '22.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm ci
+    npm run lint
+    npm run build
+  displayName: 'npm ci, lint and build'
+>>>>>>> master

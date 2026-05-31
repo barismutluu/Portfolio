@@ -14,6 +14,7 @@ const validationSchema = object().shape({
 });
 
 function Contact() {
+<<<<<<< HEAD
   const form = useRef(null);
   const [sendResult, setSendResult] = useState(false);
 
@@ -44,6 +45,48 @@ function Contact() {
     setTimeout(() => {
       setSendResult(false);
     }, 5000);
+=======
+  const form = useRef<HTMLFormElement>(null);
+  const [sendResult, setSendResult] = useState<"success" | "error" | null>(
+    null
+  );
+
+  const handleSubmit = (
+    _values: { name: string; email: string; message: string },
+    { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void }
+  ) => {
+    const serviceId =
+      import.meta.env.VITE_EMAILJS_SERVICE_ID ||
+      import.meta.env.REACT_APP_SERVICE_ID;
+    const templateId =
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID ||
+      import.meta.env.REACT_APP_TEMPLATE_ID;
+    const publicKey =
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY ||
+      import.meta.env.REACT_APP_PUBLIC_KEY;
+
+    if (!form.current || !serviceId || !templateId || !publicKey) {
+      console.error("EmailJS configuration is missing.");
+      setSubmitting(false);
+      setSendResult("error");
+      return;
+    }
+
+    emailjs
+      .sendForm(serviceId, templateId, form.current, publicKey)
+      .then(() => {
+        setSendResult("success");
+      })
+      .catch(() => {
+        setSendResult("error");
+      })
+      .finally(() => {
+        setSubmitting(false);
+        setTimeout(() => {
+          setSendResult(null);
+        }, 5000);
+      });
+>>>>>>> master
   };
   return (
     <div className="container relative mb-16 pt-24" id="contact">
@@ -121,9 +164,21 @@ function Contact() {
               </div>
               {sendResult ? (
                 <span
+<<<<<<< HEAD
                   className={`px-10 py-6 bg-forth-400 absolute z-10 -bottom-36 left-1/2 text-white -translate-x-1/2 whitespace-nowrap  md:text-4xl text-2xl rounded-2xl transition-all duration-300 `}
                 >
                   <Fade>Your Message Succesfully Sent</Fade>
+=======
+                  className={`px-10 py-6 ${
+                    sendResult === "success" ? "bg-forth-400" : "bg-forth-200"
+                  } absolute z-10 -bottom-36 left-1/2 text-white -translate-x-1/2 whitespace-nowrap  md:text-4xl text-2xl rounded-2xl transition-all duration-300 `}
+                >
+                  <Fade>
+                    {sendResult === "success"
+                      ? "Your Message Successfully Sent"
+                      : "Message could not be sent"}
+                  </Fade>
+>>>>>>> master
                 </span>
               ) : (
                 ""

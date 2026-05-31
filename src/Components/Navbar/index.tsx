@@ -5,17 +5,38 @@ import { Bars3Icon } from "@heroicons/react/24/solid";
 function Navbar() {
   const [show, setShow] = useState(false);
   useEffect(() => {
+<<<<<<< HEAD
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
         setShow(false);
       }
     });
     window.addEventListener("click", (e: Event) => {
+=======
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShow(false);
+      }
+    };
+    const handleClick = (e: Event) => {
+>>>>>>> master
       const target = e.target as HTMLElement;
       if (target.id !== "icon") {
         setShow(false);
       }
+<<<<<<< HEAD
     });
+=======
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("click", handleClick);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("click", handleClick);
+    };
+>>>>>>> master
   }, []);
   const links = [
     "home",

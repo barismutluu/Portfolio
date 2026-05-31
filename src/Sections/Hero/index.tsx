@@ -12,8 +12,13 @@ function Hero() {
       <About />
       <Illus />
       <p className="w-screen px-10 mt-12 text-center text-xl relative lg:bottom-20 bottom-12 text-shadows-100 font-bold">
+<<<<<<< HEAD
         Let's explore the intersection of engineering and web development as I
         build innovative solutions for an engaging online world.
+=======
+        I build maintainable software solutions with a focus on backend APIs,
+        real business workflows and reliable engineering practices.
+>>>>>>> master
       </p>
     </div>
   );
