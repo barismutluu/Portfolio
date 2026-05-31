@@ -14,38 +14,6 @@ const validationSchema = object().shape({
 });
 
 function Contact() {
-<<<<<<< HEAD
-  const form = useRef(null);
-  const [sendResult, setSendResult] = useState(false);
-
-  const handleSubmit = (
-    _values: { name: string; email: string; message: string },
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void }
-  ) => {
-    emailjs
-      .sendForm(
-        import.meta.env.REACT_APP_SERVICE_ID,
-        import.meta.env.REACT_APP_TEMPLATE_ID,
-        // form.current,
-        import.meta.env.REACT_APP_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    setTimeout(() => {
-      setSendResult(true);
-      setSubmitting(false);
-    }, 2000);
-    setTimeout(() => {
-      setSendResult(false);
-    }, 5000);
-=======
   const form = useRef<HTMLFormElement>(null);
   const [sendResult, setSendResult] = useState<"success" | "error" | null>(
     null
@@ -86,7 +54,6 @@ function Contact() {
           setSendResult(null);
         }, 5000);
       });
->>>>>>> master
   };
   return (
     <div className="container relative mb-16 pt-24" id="contact">
@@ -164,21 +131,15 @@ function Contact() {
               </div>
               {sendResult ? (
                 <span
-<<<<<<< HEAD
-                  className={`px-10 py-6 bg-forth-400 absolute z-10 -bottom-36 left-1/2 text-white -translate-x-1/2 whitespace-nowrap  md:text-4xl text-2xl rounded-2xl transition-all duration-300 `}
-                >
-                  <Fade>Your Message Succesfully Sent</Fade>
-=======
                   className={`px-10 py-6 ${
                     sendResult === "success" ? "bg-forth-400" : "bg-forth-200"
-                  } absolute z-10 -bottom-36 left-1/2 text-white -translate-x-1/2 whitespace-nowrap  md:text-4xl text-2xl rounded-2xl transition-all duration-300 `}
+                  } absolute z-10 -bottom-36 left-1/2 text-white -translate-x-1/2 whitespace-nowrap md:text-4xl text-2xl rounded-2xl transition-all duration-300 `}
                 >
                   <Fade>
                     {sendResult === "success"
                       ? "Your Message Successfully Sent"
                       : "Message could not be sent"}
                   </Fade>
->>>>>>> master
                 </span>
               ) : (
                 ""

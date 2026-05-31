@@ -3,22 +3,14 @@ import "./styles.css";
 
 import ProjectCard from "../../Components/ProjectCard";
 import { VerticalTimeline } from "react-vertical-timeline-component";
+import libraryApp from "../../Assets/projects/libraryApp.png";
 import mineSweeperGame from "../../Assets/projects/mineSweeper.png";
 import sportCenter from "../../Assets/projects/sportcenter.png";
-import veterinary from "../../Assets/projects/veterinary.png";
 import tourism from "../../Assets/projects/tourism.png";
-import libraryApp from "../../Assets/projects/libraryApp.png";
+import veterinary from "../../Assets/projects/veterinary.png";
 
 const projects = [
   {
-<<<<<<< HEAD
-    image: veterinary,
-    title: "Veterinary Management System",
-    description: `The Veterinary Management System is an API developed for managing veterinary clinic operations. It allows staff to perform various tasks and can be tested using Swagger UI`,
-    link: "",
-    gitLink: "https://github.com/barismutluu/Veterinary-Management-System",
-    tech: ["Java ", "Spring Boot","Spring Data JPA","Hibernate","Maven"],
-=======
     title: "Selenium Web Test Automation Framework",
     description: `A Java and Selenium WebDriver automation framework for an end-to-end Kitapyurdu user flow. It uses Page Object Model, JUnit 5, Maven, WebDriverManager, Log4j2, ordered test execution and reusable page actions for maintainable UI test automation.`,
     gitLink: "https://github.com/barismutluu/Selenium-Web-Otomasyon-Proje-odevi",
@@ -63,23 +55,17 @@ const projects = [
   {
     image: veterinary,
     title: "Veterinary Management System",
-    description: `The Veterinary Management System is an API developed for managing veterinary clinic operations. It allows staff to perform various tasks and can be tested using Swagger UI`,
+    description: `The Veterinary Management System is an API developed for managing veterinary clinic operations. It allows staff to perform various tasks and can be tested using Swagger UI.`,
     gitLink: "https://github.com/barismutluu/Veterinary-Management-System",
     category: "Backend API",
     tech: ["Java", "Spring Boot", "Spring Data JPA", "Hibernate", "Maven"],
->>>>>>> master
   },
   {
     image: mineSweeperGame,
     title: "Mine Sweeper Game",
-    description: `The text-based MineSweeper game is implemented using a 2D array, where users specify matrix dimensions and mines are randomly placed. The game ends when the user selects a mine, while successfully opening all safe cells leads to a win..`,
-<<<<<<< HEAD
-    link: "",
-    gitLink: "https://github.com/barismutluu/MineSweeperGame",
-=======
+    description: `The text-based MineSweeper game is implemented using a 2D array, where users specify matrix dimensions and mines are randomly placed. The game ends when the user selects a mine, while successfully opening all safe cells leads to a win.`,
     gitLink: "https://github.com/barismutluu/MineSweeperGame",
     category: "Java",
->>>>>>> master
     tech: ["Java"],
   },
   {
@@ -88,39 +74,25 @@ const projects = [
     description: `The responsive web page for the sports center that includes a variety of classes, top trainers, a BMI calculator and an active Google Map.`,
     link: "https://sport-center-ten.vercel.app/",
     gitLink: "https://github.com/barismutluu/SportCenter",
-<<<<<<< HEAD
-    tech: ["HTML","CSS","JavaScript"],
-=======
     category: "Frontend",
     tech: ["HTML", "CSS", "JavaScript"],
->>>>>>> master
   },
   {
     image: tourism,
     title: "Tourism Agency Application",
     description: `This project was developed to digitalize the daily operations of the Tourism Agency and optimize customer reservation processes.`,
-<<<<<<< HEAD
-    link: "",
-    gitLink: "https://github.com/barismutluu/TurizmAcenteSistemi",
-    tech: ["Java", "PostgreSQL","Swagger API"],
-=======
     gitLink: "https://github.com/barismutluu/TurizmAcenteSistemi",
     category: "Desktop / Backend",
     tech: ["Java", "PostgreSQL", "Swagger API"],
->>>>>>> master
   },
   {
     image: libraryApp,
     title: "Library App",
-    description: `No authentication is needed, so everyone can try the page without providing any information. 
-LibraryApp is a library management system that enables users to perform CRUD operations for Publisher, Category, Book, Author, and Book Purchase. It is a Single Page Application (SPA) built with React Router.`,
+    description: `LibraryApp is a library management system that enables users to perform CRUD operations for Publisher, Category, Book, Author, and Book Purchase. It is a Single Page Application built with React Router.`,
     link: "https://amazing-zuccutto-1606de.netlify.app/",
     gitLink: "https://github.com/barismutluu/LibraryApp",
-<<<<<<< HEAD
-=======
     category: "Frontend",
->>>>>>> master
-    tech: ["React", "React Router", "Bootstrap", "Tailwind Css"],
+    tech: ["React", "React Router", "Bootstrap", "Tailwind CSS"],
   },
 ];
 
