@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://barismutluu.github.io/Portfolio/sitemap.xml
+Sitemap: https://barismutlu.com.tr/sitemap.xml
