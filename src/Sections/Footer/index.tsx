@@ -7,7 +7,7 @@ import resume from "../../Assets/certificates/Baris_MUTLU.pdf";
 function Footer() {
   const year = new Date().getFullYear();
   return (
-    <div className="bg-onecolor-100 footer" id="links">
+    <footer className="bg-onecolor-100 footer" id="links">
       <div className="flex flex-wrap justify-center items-center md:gap-24 gap-4 text-center text-2xl font-bold tracking-widest py-8 md:py-24">
         <a href="https://github.com/barismutluu" target="_blank" rel="noreferrer">
           <div className="relative">
@@ -47,9 +47,9 @@ function Footer() {
         </a>
       </div>
       <div className="text-white w-screen flex justify-center items-center text-lg tracking-wider pb-2">
-        Barış Mutlu - Portfolio Page - {year.toString()}
+        Barış Mutlu - Software Developer Portfolio - {year.toString()}
       </div>
-    </div>
+    </footer>
   );
 }
 

@@ -56,11 +56,15 @@ function Contact() {
       });
   };
   return (
-    <div className="container relative mb-16 pt-24" id="contact">
+    <section
+      className="container relative mb-16 pt-24"
+      id="contact"
+      aria-labelledby="contact-title"
+    >
       <div className="md:px-24 p-6 py-6 shadow-2xl">
-        <h3 className="text-4xl text-shadows-100 text-center pb-12 relative">
+        <h2 id="contact-title" className="text-4xl text-shadows-100 text-center pb-12 relative">
           Contact Me
-        </h3>
+        </h2>
 
         <Formik
           initialValues={{ name: "", email: "", message: "" }}
@@ -148,7 +152,7 @@ function Contact() {
           )}
         </Formik>
       </div>
-    </div>
+    </section>
   );
 }
 

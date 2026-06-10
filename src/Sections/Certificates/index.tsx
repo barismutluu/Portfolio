@@ -80,13 +80,14 @@ const certificates: certificate[] = [
 function Certificates() {
   return (
     <Fade cascade triggerOnce>
-      <div
+      <section
         className=" relative py-36 flex flex-wrap justify-center items-center mx-auto"
         id="certificates"
+        aria-labelledby="certificates-title"
       >
-        <h1 className="w-screen text-center text-4xl text-shadows-100 font-bold pb-3">
+        <h2 id="certificates-title" className="w-screen text-center text-4xl text-shadows-100 font-bold pb-3">
           Certificates
-        </h1>
+        </h2>
         <div className="flex flex-row justify-start items-start container overflow-y-hidden pt-48 cards-div pl-40">
           {certificates.map((item, key) => {
             return (
@@ -100,7 +101,7 @@ function Certificates() {
             );
           })}
         </div>
-      </div>
+      </section>
     </Fade>
   );
 }

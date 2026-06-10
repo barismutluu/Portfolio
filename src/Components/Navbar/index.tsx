@@ -34,7 +34,7 @@ function Navbar() {
     "links",
   ];
   return (
-    <div className="">
+    <nav aria-label="Main navigation">
       <Bars3Icon
         className=" h-12 w-12 text-white fixed right-4 md:right-10 z-40 cursor-pointer mt-4 md:mt-6 icon bg-double-100 rounded-xl p-2"
         onClick={() => setShow(!show)}
@@ -66,7 +66,7 @@ function Navbar() {
           })}
         </ul>
       </div>
-    </div>
+    </nav>
   );
 }
 

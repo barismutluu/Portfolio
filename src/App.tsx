@@ -12,11 +12,13 @@ function App() {
   return (
     <div className="App w-screen m-0">
       <Navbar />
-      <Hero />
-      <AboutMe />
-      <Projects />
-      <Certificates />
-      <Contact />
+      <main>
+        <Hero />
+        <AboutMe />
+        <Projects />
+        <Certificates />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );

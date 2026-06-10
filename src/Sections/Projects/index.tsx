@@ -98,16 +98,16 @@ const projects = [
 
 function Projects() {
   return (
-    <div id="projects" className="pr-12 xl:p-0">
-      <h1 className="w-screen text-center text-4xl text-shadows-100 pt-24 pb-12 font-bold ">
+    <section id="projects" className="pr-12 xl:p-0" aria-labelledby="projects-title">
+      <h2 id="projects-title" className="w-screen text-center text-4xl text-shadows-100 pt-24 pb-12 font-bold ">
         Projects
-      </h1>
+      </h2>
       <VerticalTimeline lineColor="#595DE5" className="">
         {projects.map((item, key) => (
           <ProjectCard key={key} props={item} />
         ))}
       </VerticalTimeline>
-    </div>
+    </section>
   );
 }
 
